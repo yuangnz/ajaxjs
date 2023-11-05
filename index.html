@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Control de Actividades Diarias</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container mt-4">
+        <h2>Control de Actividades Diarias</h2>
+        <form id="activity-form">
+            <div class="form-group">
+                <label for="name">Descripción:</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="days">Cantidad de Días:</label>
+                <input type="number" class="form-control" id="days" required>
+            </div>
+            <div class="form-group">
+                <label for="start-date">Fecha de Inicio:</label>
+                <input type="date" class="form-control" id="start-date" required>
+            </div>
+            <div class="form-group">
+                <label for="end-date">Fecha de Fin:</label>
+                <input type="date" class="form-control" id="end-date" required>
+            </div>
+            <div class="form-group">
+                <label for="responsible">Responsable:</label>
+                <input type="text" class="form-control" id="responsible" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+        </form>
+        <h2>Registros</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Descripción</th>
+                    <th>Cantidad de Días</th>
+                    <th>Fecha de Inicio</th>
+                    <th>Fecha de Fin</th>
+                    <th>Responsable</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="activity-list">
+            </tbody>
+        </table>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
